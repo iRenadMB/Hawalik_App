@@ -9,9 +9,8 @@ struct HomeSideMenu: View{
         
         ZStack{
             
-            Color("CG")
+            Color("LightGray")
                 .ignoresSafeArea()
-//                .opacity(0.5)
             VStack{
                 
                 VStack(spacing: 0){

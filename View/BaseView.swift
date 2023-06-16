@@ -28,7 +28,7 @@ struct BaseView: View{
             
             ZStack{
                 
-                Color("TC")
+                Color("DarkGray")
                     .ignoresSafeArea()
                 
                 HStack(spacing: 0){

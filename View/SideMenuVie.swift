@@ -74,8 +74,7 @@ struct SideMenuVie: View{
         .frame(width: getRect().width - 90)
         .frame(maxHeight: .infinity)
         .background(
-            Color("CG")
-//                .opacity(0.5)
+            Color("LightGray")
                 .ignoresSafeArea(.container, edges: .vertical)
         )
         .frame(maxWidth: .infinity, alignment: .leading)

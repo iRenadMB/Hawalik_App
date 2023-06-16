@@ -26,15 +26,14 @@ struct CarManufacturesSheet: View {
         }
         
         .sheet(isPresented: $showSheetScreenCarManufact, content: {
-            VStack {
-                Picker("", selection: $number) {
-                    ForEach(2000...2023, id: \.self) {
-                        Text("\($0)")
-                    }
-                    .presentationDetents([.height(200), .medium])
-                    
-                }.pickerStyle(.wheel)
-            }
+                VStack {
+                    Picker("", selection: $number) {
+                        ForEach(2000...2023, id: \.self) {
+                            Text("\($0)")
+                        }
+                        .presentationDetents([.height(200), .medium])
+                    }.pickerStyle(.wheel)
+                }
         })
     }
 }

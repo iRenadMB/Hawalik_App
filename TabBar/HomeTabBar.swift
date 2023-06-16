@@ -29,7 +29,7 @@ struct HomeTabBar: View {
     }
     
     @ViewBuilder
-    func CustomTabBar(_ tint: Color = Color ("BG"), _ inactiveTint: Color = Color ("CG")) ->
+    func CustomTabBar(_ tint: Color = Color.gray, _ inactiveTint: Color = Color.white) ->
     some View {
         // Moving all the Remaining Tab Item's to Bottom
         HStack(alignment: .bottom, spacing: 0) {
@@ -49,7 +49,7 @@ struct HomeTabBar: View {
             Rectangle()
                 .ignoresSafeArea()
                 .shadow(color: tint.opacity(0.2), radius: 5, x: 0, y: -5)
-                .blur(radius: 2)
+//                .blur(radius: 2)
                 .padding(.top, 25)
         })
         .animation(.interactiveSpring(response: 0.6, dampingFraction: 0.7, blendDuration:  0.7), value: activeTab)
@@ -68,7 +68,7 @@ struct TabItem: View {
         VStack(spacing: 5) {
             Image(systemName: tab.systemImage)
                 .font(.title2)
-                .foregroundColor (activeTab == tab ? Color("CG") : inactiveTint)
+                .foregroundColor(activeTab == tab ? Color.white : inactiveTint)
             // Increasing Size for the Active Tab
                 .frame(width: activeTab == tab ? 58 : 35, height: activeTab == tab ? 58 : 35)
                 .background {
@@ -81,7 +81,7 @@ struct TabItem: View {
             
             Text(tab.rawValue)
                 .font(.caption)
-                .foregroundColor (activeTab == tab ? tint : Color("BG"))
+                .foregroundColor (activeTab == tab ? tint : Color.white)
         }
         .frame(maxWidth: .infinity)
         .contentShape(Rectangle())
