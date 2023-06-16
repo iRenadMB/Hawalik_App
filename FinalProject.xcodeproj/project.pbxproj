@@ -7,34 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A15A7C9E2A3A0A3900F32999 /* FormPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A7C9D2A3A0A3900F32999 /* FormPage.swift */; };
+		A15A7CA02A3A1F1800F32999 /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A7C9F2A3A1F1800F32999 /* CustomNavBarView.swift */; };
+		A15A7CA32A3A241000F32999 /* CarBrandSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A7CA22A3A241000F32999 /* CarBrandSheet.swift */; };
+		A15A7CA52A3A243600F32999 /* CarModelSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A7CA42A3A243600F32999 /* CarModelSheet.swift */; };
+		A15A7CA72A3A245400F32999 /* CarManufacturesSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A7CA62A3A245400F32999 /* CarManufacturesSheet.swift */; };
+		A15A7CAB2A3BC01400F32999 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A7CAA2A3BC01400F32999 /* TabBar.swift */; };
+		A15A7CAD2A3BC04400F32999 /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A7CAC2A3BC04400F32999 /* TabShape.swift */; };
+		A15A7CAF2A3BC06300F32999 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A7CAE2A3BC06300F32999 /* HomeTabBar.swift */; };
 		A1BB03602A37016D00C9A701 /* FinalProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB035F2A37016D00C9A701 /* FinalProjectApp.swift */; };
 		A1BB03622A37016D00C9A701 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB03612A37016D00C9A701 /* ContentView.swift */; };
 		A1BB03642A37016E00C9A701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1BB03632A37016E00C9A701 /* Assets.xcassets */; };
 		A1BB03672A37016E00C9A701 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1BB03662A37016E00C9A701 /* Preview Assets.xcassets */; };
-		A1BB03712A37023000C9A701 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB03702A37023000C9A701 /* Tab.swift */; };
-		A1BB03782A37038800C9A701 /* TabBarMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB03772A37038800C9A701 /* TabBarMainView.swift */; };
-		A1BB037A2A3703B900C9A701 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB03792A3703B900C9A701 /* CustomCorner.swift */; };
-		A1BB037C2A372A0900C9A701 /* HomeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB037B2A372A0900C9A701 /* HomeMainView.swift */; };
-		A1BB037E2A37462100C9A701 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB037D2A37462100C9A701 /* TabButton.swift */; };
-		A1BB03802A374A1600C9A701 /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB037F2A374A1600C9A701 /* CustomCorners.swift */; };
-		A1BB03822A37745A00C9A701 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB03812A37745900C9A701 /* SideMenu.swift */; };
-		A1BB03842A37A4B100C9A701 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB03832A37A4B100C9A701 /* Home.swift */; };
+		A1BB03882A37CFE500C9A701 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB03872A37CFE500C9A701 /* BaseView.swift */; };
+		A1BB038A2A37D0D500C9A701 /* SideMenuVie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB03892A37D0D500C9A701 /* SideMenuVie.swift */; };
+		A1BB038C2A38FBD700C9A701 /* HomeSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB038B2A38FBD700C9A701 /* HomeSideMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A15A7C9D2A3A0A3900F32999 /* FormPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPage.swift; sourceTree = "<group>"; };
+		A15A7C9F2A3A1F1800F32999 /* CustomNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarView.swift; sourceTree = "<group>"; };
+		A15A7CA22A3A241000F32999 /* CarBrandSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBrandSheet.swift; sourceTree = "<group>"; };
+		A15A7CA42A3A243600F32999 /* CarModelSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelSheet.swift; sourceTree = "<group>"; };
+		A15A7CA62A3A245400F32999 /* CarManufacturesSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarManufacturesSheet.swift; sourceTree = "<group>"; };
+		A15A7CAA2A3BC01400F32999 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		A15A7CAC2A3BC04400F32999 /* TabShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabShape.swift; sourceTree = "<group>"; };
+		A15A7CAE2A3BC06300F32999 /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
 		A1BB035C2A37016D00C9A701 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BB035F2A37016D00C9A701 /* FinalProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectApp.swift; sourceTree = "<group>"; };
 		A1BB03612A37016D00C9A701 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1BB03632A37016E00C9A701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1BB03662A37016E00C9A701 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A1BB03702A37023000C9A701 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
-		A1BB03772A37038800C9A701 /* TabBarMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMainView.swift; sourceTree = "<group>"; };
-		A1BB03792A3703B900C9A701 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
-		A1BB037B2A372A0900C9A701 /* HomeMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainView.swift; sourceTree = "<group>"; };
-		A1BB037D2A37462100C9A701 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
-		A1BB037F2A374A1600C9A701 /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
-		A1BB03812A37745900C9A701 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
-		A1BB03832A37A4B100C9A701 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A1BB03872A37CFE500C9A701 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		A1BB03892A37D0D500C9A701 /* SideMenuVie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVie.swift; sourceTree = "<group>"; };
+		A1BB038B2A38FBD700C9A701 /* HomeSideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSideMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,12 +54,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A15A7CA12A3A23E300F32999 /* FormPageModel */ = {
+			isa = PBXGroup;
+			children = (
+				A15A7CA82A3A275500F32999 /* Sheets */,
+				A15A7C9D2A3A0A3900F32999 /* FormPage.swift */,
+			);
+			path = FormPageModel;
+			sourceTree = "<group>";
+		};
+		A15A7CA82A3A275500F32999 /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				A15A7C9F2A3A1F1800F32999 /* CustomNavBarView.swift */,
+				A15A7CA22A3A241000F32999 /* CarBrandSheet.swift */,
+				A15A7CA42A3A243600F32999 /* CarModelSheet.swift */,
+				A15A7CA62A3A245400F32999 /* CarManufacturesSheet.swift */,
+			);
+			path = Sheets;
+			sourceTree = "<group>";
+		};
+		A15A7CA92A3BBFD200F32999 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A15A7CAA2A3BC01400F32999 /* TabBar.swift */,
+				A15A7CAC2A3BC04400F32999 /* TabShape.swift */,
+				A15A7CAE2A3BC06300F32999 /* HomeTabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		A1BB03532A37016D00C9A701 = {
 			isa = PBXGroup;
 			children = (
 				A1BB036F2A37021100C9A701 /* ViewModel */,
 				A1BB036E2A37020A00C9A701 /* View */,
 				A1BB036D2A3701FC00C9A701 /* Model */,
+				A15A7CA92A3BBFD200F32999 /* TabBar */,
 				A1BB035E2A37016D00C9A701 /* FinalProject */,
 				A1BB035D2A37016D00C9A701 /* Products */,
 			);
@@ -89,7 +126,7 @@
 		A1BB036D2A3701FC00C9A701 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A1BB03702A37023000C9A701 /* Tab.swift */,
+				A15A7CA12A3A23E300F32999 /* FormPageModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -97,13 +134,9 @@
 		A1BB036E2A37020A00C9A701 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A1BB03722A37033100C9A701 /* Tab View's */,
-				A1BB03792A3703B900C9A701 /* CustomCorner.swift */,
-				A1BB037B2A372A0900C9A701 /* HomeMainView.swift */,
-				A1BB037D2A37462100C9A701 /* TabButton.swift */,
-				A1BB037F2A374A1600C9A701 /* CustomCorners.swift */,
-				A1BB03812A37745900C9A701 /* SideMenu.swift */,
-				A1BB03832A37A4B100C9A701 /* Home.swift */,
+				A1BB03872A37CFE500C9A701 /* BaseView.swift */,
+				A1BB03892A37D0D500C9A701 /* SideMenuVie.swift */,
+				A1BB038B2A38FBD700C9A701 /* HomeSideMenu.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,14 +146,6 @@
 			children = (
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		A1BB03722A37033100C9A701 /* Tab View's */ = {
-			isa = PBXGroup;
-			children = (
-				A1BB03772A37038800C9A701 /* TabBarMainView.swift */,
-			);
-			path = "Tab View's";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,16 +218,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1BB037C2A372A0900C9A701 /* HomeMainView.swift in Sources */,
-				A1BB03712A37023000C9A701 /* Tab.swift in Sources */,
-				A1BB03842A37A4B100C9A701 /* Home.swift in Sources */,
-				A1BB03782A37038800C9A701 /* TabBarMainView.swift in Sources */,
-				A1BB03822A37745A00C9A701 /* SideMenu.swift in Sources */,
+				A15A7CAF2A3BC06300F32999 /* HomeTabBar.swift in Sources */,
+				A15A7CA72A3A245400F32999 /* CarManufacturesSheet.swift in Sources */,
+				A15A7CA02A3A1F1800F32999 /* CustomNavBarView.swift in Sources */,
+				A1BB038A2A37D0D500C9A701 /* SideMenuVie.swift in Sources */,
+				A1BB03882A37CFE500C9A701 /* BaseView.swift in Sources */,
+				A15A7CA32A3A241000F32999 /* CarBrandSheet.swift in Sources */,
 				A1BB03622A37016D00C9A701 /* ContentView.swift in Sources */,
-				A1BB037A2A3703B900C9A701 /* CustomCorner.swift in Sources */,
-				A1BB03802A374A1600C9A701 /* CustomCorners.swift in Sources */,
+				A1BB038C2A38FBD700C9A701 /* HomeSideMenu.swift in Sources */,
+				A15A7CA52A3A243600F32999 /* CarModelSheet.swift in Sources */,
+				A15A7CAB2A3BC01400F32999 /* TabBar.swift in Sources */,
+				A15A7CAD2A3BC04400F32999 /* TabShape.swift in Sources */,
 				A1BB03602A37016D00C9A701 /* FinalProjectApp.swift in Sources */,
-				A1BB037E2A37462100C9A701 /* TabButton.swift in Sources */,
+				A15A7C9E2A3A0A3900F32999 /* FormPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
