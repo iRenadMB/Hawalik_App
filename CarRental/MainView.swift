@@ -16,21 +16,10 @@ struct MainView: View {
     var body: some View {
         ZStack(alignment: .bottom){
             TabView(selection: $currentTab){
+                
                 HomeView()
                     .setTabBarBackground(color: Color("BG"))
                     .tag(Tab.home)
-                
-                Text("Scan")
-                    .setTabBarBackground(color: Color("BG"))
-                    .tag(Tab.scan)
-                
-                Text("File's")
-                    .setTabBarBackground(color: Color("BG"))
-                    .tag(Tab.folder)
-                
-                Text("Cart!")
-                    .setTabBarBackground(color: Color("BG"))
-                    .tag(Tab.cart)
             }
             TabBar()
                 .offset(y: showTabBar ? 0 : 130)

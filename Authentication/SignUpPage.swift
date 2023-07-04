@@ -15,30 +15,34 @@ struct SignUpPage: View {
     @State private var isFormValid = false
     
     var body: some View{
+        
         NavigationView{
+            
             ZStack{
-                GradientBackground(startColor: Color("LightGray"), endColor: Color("BG"), startPoint: .center, endPoint: .topLeading)
-                VStack(spacing: 25) {
+                GradientBackground(
+                    startColor: Color("LightGray"),
+                    endColor: Color("BG"),
+                    startPoint: .center,
+                    endPoint: .topLeading)
+                
+                VStack(spacing: 25){
+                    
                     VStack(spacing: 20){
                         Text("Sign up")
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color("BG"))
-                            .font(.title)
-                            .bold()
-                        Text("We're excited to  you for joining us")
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color("BG"))
-                            .font(.title3)
-                            .bold()
+                            .font(.title).bold()
+                        
+                        Text("We're excited to you for joining us")
+                            .font(.title3).bold()
                     }
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color("BG"))
-                    .font(.title3)
-                    .bold()
+                    
                     Spacer()
+                    
                     HStack {
                         Image(systemName: "envelope")
                             .foregroundColor(.secondary)
+                        
                         TextField("Email address", text: $email)
                             .keyboardType(.emailAddress)
                             .autocapitalization(.none)
@@ -71,12 +75,12 @@ struct SignUpPage: View {
                         Image(systemName: "lock")
                             .foregroundColor(.secondary)
                         if showPassword2 {
-                            TextField("Confirm Password", text: $confirmPassword)
+                            TextField("Confirm password", text: $confirmPassword)
                         } else {
-                            SecureField("Confirm Password", text: $confirmPassword)
+                            SecureField("Confirm password", text: $confirmPassword)
                         }
                         
-                        Button(action: { self.showPassword2.toggle() }) {
+                        Button(action: { self.showPassword2.toggle() }){
                             Image(systemName: "eye")
                                 .foregroundColor(.secondary)
                         }
@@ -108,8 +112,8 @@ struct SignUpPage: View {
                     
                     Spacer()
                     
-                    VStack {
-                        Button(action: signUp) {
+                    VStack{
+                        Button(action: SignUp){
                             Text("Sign up")
                                 .font(.headline)
                                 .padding(16)
@@ -123,29 +127,25 @@ struct SignUpPage: View {
                         
                         HStack{
                             Text("Already have an account?")
-                                .foregroundColor(Color("BG"))
                             NavigationLink(destination: LogInPage()) {
                                 Text("Log in")
-                                    .underline()
-                                
+                                    .underline().bold()
                             }
-                        }
+                        }.foregroundColor(Color("BG"))
                     }
                 }
                 .padding(.top ,100)
                 .padding(.bottom ,40)
                 .padding(.horizontal ,20)
             }
-        }
-        .navigationBarBackButtonHidden(true)
+        }.navigationBarBackButtonHidden(true)
     }
     
-    func signUp() {
-        if password != confirmPassword {
+    func SignUp(){
+        if password != confirmPassword{
             errorMessage = "Passwords do not match"
             return
         }
-        
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
             if let error = error {
                 errorMessage = error.localizedDescription
@@ -156,21 +156,20 @@ struct SignUpPage: View {
         }
     }
     
-    func isValidEmail(_ email: String) -> Bool {
+    func isValidEmail(_ email: String) -> Bool{
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailRegex)
         return emailPredicate.evaluate(with: email)
     }
     
-    private func updateFormValidity() {
+    private func updateFormValidity(){
         isFormValid = !email.isEmpty && !password.isEmpty && !confirmPassword.isEmpty && !phoneNumber.isEmpty && isValidEmail(email)
     }
 }
 
 
-struct SignUp_Previews: PreviewProvider {
-    static var previews: some View {
+struct SignUp_Previews: PreviewProvider{
+    static var previews: some View{
         SignUpPage()
     }
 }
-

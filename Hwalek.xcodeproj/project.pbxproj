@@ -15,17 +15,24 @@
 		A142E55B2A40A1D40007D772 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A142E55A2A40A1D40007D772 /* FirebaseStorage */; };
 		A142E55F2A40BFEF0007D772 /* FormPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142E55E2A40BFEF0007D772 /* FormPage.swift */; };
 		A142E5802A40D9C30007D772 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142E57F2A40D9C30007D772 /* CarViewModel.swift */; };
-		A15569542A3E345700F7D7E2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15569532A3E345700F7D7E2 /* Login.swift */; };
-		A15569562A3E349300F7D7E2 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15569552A3E349300F7D7E2 /* SignUp.swift */; };
+		A15569542A3E345700F7D7E2 /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15569532A3E345700F7D7E2 /* LogInPage.swift */; };
+		A15569562A3E349300F7D7E2 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15569552A3E349300F7D7E2 /* SignUpPage.swift */; };
 		A15569582A3E34B200F7D7E2 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15569572A3E34B200F7D7E2 /* GradientBackground.swift */; };
 		A15569612A3F317000F7D7E2 /* BrandListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15569602A3F317000F7D7E2 /* BrandListModel.swift */; };
 		A15A7CA02A3A1F1800F32999 /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A7C9F2A3A1F1800F32999 /* CustomNavBarView.swift */; };
 		A15A7CB82A3CF62D00F32999 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A15A7CB72A3CF62D00F32999 /* FirebaseAuth */; };
 		A15A7CBA2A3CF62D00F32999 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A15A7CB92A3CF62D00F32999 /* FirebaseFirestore */; };
 		A15D99C72A434D4100CB5C57 /* OnBoardingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D99C62A434D4100CB5C57 /* OnBoardingStep.swift */; };
-		A16520E52A4187A5003B8E40 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16520E42A4187A5003B8E40 /* SwiftUIView.swift */; };
-		A16520E72A418A5F003B8E40 /* SheetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16520E62A418A5F003B8E40 /* SheetInfo.swift */; };
-		A16520ED2A41C0C6003B8E40 /* NatificationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16520EC2A41C0C6003B8E40 /* NatificationPage.swift */; };
+		A188456C2A5314DA000FEBC5 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188456B2A5314DA000FEBC5 /* SplashScreen.swift */; };
+		A18845732A5429B5000FEBC5 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18845722A5429B5000FEBC5 /* Car.swift */; };
+		A18845752A5429BB000FEBC5 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18845742A5429BB000FEBC5 /* Cart.swift */; };
+		A18845772A5429C1000FEBC5 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18845762A5429C1000FEBC5 /* Tab.swift */; };
+		A188457C2A542A29000FEBC5 /* CustomCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188457B2A542A29000FEBC5 /* CustomCarousel.swift */; };
+		A188457E2A542A2E000FEBC5 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188457D2A542A2E000FEBC5 /* CustomCorner.swift */; };
+		A18845802A542A32000FEBC5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188457F2A542A32000FEBC5 /* DetailView.swift */; };
+		A18845822A542A35000FEBC5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18845812A542A35000FEBC5 /* HomeView.swift */; };
+		A18845842A542A39000FEBC5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18845832A542A39000FEBC5 /* MainView.swift */; };
+		A18845862A542B26000FEBC5 /* SheetDetilCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18845852A542B26000FEBC5 /* SheetDetilCar.swift */; };
 		A1BB03602A37016D00C9A701 /* FinalProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB035F2A37016D00C9A701 /* FinalProjectApp.swift */; };
 		A1BB03622A37016D00C9A701 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BB03612A37016D00C9A701 /* ContentView.swift */; };
 		A1BB03642A37016E00C9A701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1BB03632A37016E00C9A701 /* Assets.xcassets */; };
@@ -42,16 +49,23 @@
 		A1196C272A407307000A0925 /* AddPhotoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoSheet.swift; sourceTree = "<group>"; };
 		A142E55E2A40BFEF0007D772 /* FormPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPage.swift; sourceTree = "<group>"; };
 		A142E57F2A40D9C30007D772 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
-		A15569532A3E345700F7D7E2 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		A15569552A3E349300F7D7E2 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		A15569532A3E345700F7D7E2 /* LogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPage.swift; sourceTree = "<group>"; };
+		A15569552A3E349300F7D7E2 /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 		A15569572A3E34B200F7D7E2 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		A15569602A3F317000F7D7E2 /* BrandListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandListModel.swift; sourceTree = "<group>"; };
 		A15A7C9F2A3A1F1800F32999 /* CustomNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarView.swift; sourceTree = "<group>"; };
 		A15D99C62A434D4100CB5C57 /* OnBoardingStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStep.swift; sourceTree = "<group>"; };
-		A16520E42A4187A5003B8E40 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
-		A16520E62A418A5F003B8E40 /* SheetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetInfo.swift; sourceTree = "<group>"; };
-		A16520EC2A41C0C6003B8E40 /* NatificationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatificationPage.swift; sourceTree = "<group>"; };
-		A1BB035C2A37016D00C9A701 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A188456B2A5314DA000FEBC5 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		A18845722A5429B5000FEBC5 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		A18845742A5429BB000FEBC5 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		A18845762A5429C1000FEBC5 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		A188457B2A542A29000FEBC5 /* CustomCarousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCarousel.swift; sourceTree = "<group>"; };
+		A188457D2A542A2E000FEBC5 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+		A188457F2A542A32000FEBC5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A18845812A542A35000FEBC5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A18845832A542A39000FEBC5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A18845852A542B26000FEBC5 /* SheetDetilCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetDetilCar.swift; sourceTree = "<group>"; };
+		A1BB035C2A37016D00C9A701 /* Hwalek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hwalek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BB035F2A37016D00C9A701 /* FinalProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectApp.swift; sourceTree = "<group>"; };
 		A1BB03612A37016D00C9A701 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1BB03632A37016E00C9A701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,12 +94,13 @@
 		19D3CE032A41F522000051CF /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				A18845852A542B26000FEBC5 /* SheetDetilCar.swift */,
 				19D3CE092A41F87A000051CF /* MapView.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
 		};
-		A142E57E2A40D9940007D772 /* CarSheet */ = {
+		A142E57E2A40D9940007D772 /* CarForm */ = {
 			isa = PBXGroup;
 			children = (
 				A15A7C9F2A3A1F1800F32999 /* CustomNavBarView.swift */,
@@ -94,39 +109,53 @@
 				A15569602A3F317000F7D7E2 /* BrandListModel.swift */,
 				A142E55E2A40BFEF0007D772 /* FormPage.swift */,
 			);
-			path = CarSheet;
+			path = CarForm;
 			sourceTree = "<group>";
 		};
 		A15569522A3E341900F7D7E2 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				A15569532A3E345700F7D7E2 /* Login.swift */,
-				A15569552A3E349300F7D7E2 /* SignUp.swift */,
 				A15569572A3E34B200F7D7E2 /* GradientBackground.swift */,
+				A15569532A3E345700F7D7E2 /* LogInPage.swift */,
+				A15569552A3E349300F7D7E2 /* SignUpPage.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
 		};
-		A15A7CA12A3A23E300F32999 /* FormPageModel */ = {
+		A18845712A5429AC000FEBC5 /* CarRentalModel */ = {
 			isa = PBXGroup;
 			children = (
-				A142E57E2A40D9940007D772 /* CarSheet */,
-				A16520E62A418A5F003B8E40 /* SheetInfo.swift */,
+				A18845722A5429B5000FEBC5 /* Car.swift */,
+				A18845742A5429BB000FEBC5 /* Cart.swift */,
+				A18845762A5429C1000FEBC5 /* Tab.swift */,
 			);
-			path = FormPageModel;
+			path = CarRentalModel;
+			sourceTree = "<group>";
+		};
+		A188457A2A542A1F000FEBC5 /* CarRental */ = {
+			isa = PBXGroup;
+			children = (
+				A188457B2A542A29000FEBC5 /* CustomCarousel.swift */,
+				A188457D2A542A2E000FEBC5 /* CustomCorner.swift */,
+				A188457F2A542A32000FEBC5 /* DetailView.swift */,
+				A18845812A542A35000FEBC5 /* HomeView.swift */,
+				A18845832A542A39000FEBC5 /* MainView.swift */,
+			);
+			path = CarRental;
 			sourceTree = "<group>";
 		};
 		A1BB03532A37016D00C9A701 = {
 			isa = PBXGroup;
 			children = (
-				A16520EC2A41C0C6003B8E40 /* NatificationPage.swift */,
 				19D3CE0B2A41F95A000051CF /* GoogleService-Info.plist */,
-				A16520E42A4187A5003B8E40 /* SwiftUIView.swift */,
+				A188456B2A5314DA000FEBC5 /* SplashScreen.swift */,
 				A15D99C62A434D4100CB5C57 /* OnBoardingStep.swift */,
 				A15569522A3E341900F7D7E2 /* Authentication */,
 				A1BB036E2A37020A00C9A701 /* Home */,
 				19D3CE032A41F522000051CF /* Map */,
-				A15A7CA12A3A23E300F32999 /* FormPageModel */,
+				A142E57E2A40D9940007D772 /* CarForm */,
+				A18845712A5429AC000FEBC5 /* CarRentalModel */,
+				A188457A2A542A1F000FEBC5 /* CarRental */,
 				A1BB035E2A37016D00C9A701 /* FinalProject */,
 				A1BB035D2A37016D00C9A701 /* Products */,
 			);
@@ -135,7 +164,7 @@
 		A1BB035D2A37016D00C9A701 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A1BB035C2A37016D00C9A701 /* FinalProject.app */,
+				A1BB035C2A37016D00C9A701 /* Hwalek.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,9 +202,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A1BB035B2A37016D00C9A701 /* FinalProject */ = {
+		A1BB035B2A37016D00C9A701 /* Hwalek */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1BB036A2A37016E00C9A701 /* Build configuration list for PBXNativeTarget "FinalProject" */;
+			buildConfigurationList = A1BB036A2A37016E00C9A701 /* Build configuration list for PBXNativeTarget "Hwalek" */;
 			buildPhases = (
 				A1BB03582A37016D00C9A701 /* Sources */,
 				A1BB03592A37016D00C9A701 /* Frameworks */,
@@ -185,7 +214,7 @@
 			);
 			dependencies = (
 			);
-			name = FinalProject;
+			name = Hwalek;
 			packageProductDependencies = (
 				A15A7CB72A3CF62D00F32999 /* FirebaseAuth */,
 				A15A7CB92A3CF62D00F32999 /* FirebaseFirestore */,
@@ -194,7 +223,7 @@
 				19D3CE052A41F57B000051CF /* FirebaseDatabase */,
 			);
 			productName = FinalProject;
-			productReference = A1BB035C2A37016D00C9A701 /* FinalProject.app */;
+			productReference = A1BB035C2A37016D00C9A701 /* Hwalek.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +241,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A1BB03572A37016D00C9A701 /* Build configuration list for PBXProject "FinalProject" */;
+			buildConfigurationList = A1BB03572A37016D00C9A701 /* Build configuration list for PBXProject "Hwalek" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -229,7 +258,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A1BB035B2A37016D00C9A701 /* FinalProject */,
+				A1BB035B2A37016D00C9A701 /* Hwalek */,
 			);
 		};
 /* End PBXProject section */
@@ -252,21 +281,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A15569542A3E345700F7D7E2 /* Login.swift in Sources */,
+				A188456C2A5314DA000FEBC5 /* SplashScreen.swift in Sources */,
+				A18845732A5429B5000FEBC5 /* Car.swift in Sources */,
+				A15569542A3E345700F7D7E2 /* LogInPage.swift in Sources */,
+				A18845772A5429C1000FEBC5 /* Tab.swift in Sources */,
 				A15A7CA02A3A1F1800F32999 /* CustomNavBarView.swift in Sources */,
 				A1BB038A2A37D0D500C9A701 /* SideMenuVie.swift in Sources */,
+				A18845802A542A32000FEBC5 /* DetailView.swift in Sources */,
 				A1BB03882A37CFE500C9A701 /* BaseView.swift in Sources */,
-				A15569562A3E349300F7D7E2 /* SignUp.swift in Sources */,
+				A188457E2A542A2E000FEBC5 /* CustomCorner.swift in Sources */,
+				A15569562A3E349300F7D7E2 /* SignUpPage.swift in Sources */,
 				A1BB03622A37016D00C9A701 /* ContentView.swift in Sources */,
+				A18845752A5429BB000FEBC5 /* Cart.swift in Sources */,
 				A1BB038C2A38FBD700C9A701 /* HomeSideMenu.swift in Sources */,
+				A18845862A542B26000FEBC5 /* SheetDetilCar.swift in Sources */,
+				A18845822A542A35000FEBC5 /* HomeView.swift in Sources */,
 				A15569612A3F317000F7D7E2 /* BrandListModel.swift in Sources */,
 				19D3CE0A2A41F87A000051CF /* MapView.swift in Sources */,
-				A16520ED2A41C0C6003B8E40 /* NatificationPage.swift in Sources */,
-				A16520E52A4187A5003B8E40 /* SwiftUIView.swift in Sources */,
+				A188457C2A542A29000FEBC5 /* CustomCarousel.swift in Sources */,
+				A18845842A542A39000FEBC5 /* MainView.swift in Sources */,
 				A1196C282A407307000A0925 /* AddPhotoSheet.swift in Sources */,
 				A142E5802A40D9C30007D772 /* CarViewModel.swift in Sources */,
 				A1BB03602A37016D00C9A701 /* FinalProjectApp.swift in Sources */,
-				A16520E72A418A5F003B8E40 /* SheetInfo.swift in Sources */,
 				A15569582A3E34B200F7D7E2 /* GradientBackground.swift in Sources */,
 				A15D99C72A434D4100CB5C57 /* OnBoardingStep.swift in Sources */,
 				A142E55F2A40BFEF0007D772 /* FormPage.swift in Sources */,
@@ -455,7 +491,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A1BB03572A37016D00C9A701 /* Build configuration list for PBXProject "FinalProject" */ = {
+		A1BB03572A37016D00C9A701 /* Build configuration list for PBXProject "Hwalek" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1BB03682A37016E00C9A701 /* Debug */,
@@ -464,7 +500,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1BB036A2A37016E00C9A701 /* Build configuration list for PBXNativeTarget "FinalProject" */ = {
+		A1BB036A2A37016E00C9A701 /* Build configuration list for PBXNativeTarget "Hwalek" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1BB036B2A37016E00C9A701 /* Debug */,

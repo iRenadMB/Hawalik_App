@@ -2,13 +2,13 @@
 import SwiftUI
 import FirebaseAuth
 
-struct LogIn: View{
+struct LogInPage: View{
     
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var errorMessage: String? = nil
     @State private var showPassword = false
-    @State private var shouldShowLoggedInView = false
+    @State private var showNextPage = false
     
     var body: some View{
         
@@ -20,11 +20,11 @@ struct LogIn: View{
                     endColor: Color("BG"),
                     startPoint: .center,
                     endPoint: .topLeading)
-                            
+                
                 VStack(spacing: 24){
                     
                     VStack{
-                        Text("Welcome Back 🎉")
+                        Text("Welcome Back")
                             .padding(.all)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color("BG"))
@@ -67,7 +67,9 @@ struct LogIn: View{
                     Spacer()
                     
                     VStack {
+                        
                         Button(action: Login){
+                            
                             Text("Log in")
                                 .font(.headline)
                                 .padding(16)
@@ -80,13 +82,11 @@ struct LogIn: View{
                         
                         HStack{
                             Text("Don't have an account?")
-                                .foregroundColor(Color("BG"))
-                            NavigationLink(destination: SignUp()){
+                            NavigationLink(destination: SignUpPage()){
                                 Text("Sign up")
-                                    .underline()
-                                    
+                                    .underline().bold()
                             }
-                        }
+                        }.foregroundColor(Color("BG"))
                     }
                 }
                 .padding(.top ,150)
@@ -98,11 +98,10 @@ struct LogIn: View{
         .background(
             NavigationLink(
                 destination: FormPage(),
-                isActive: $shouldShowLoggedInView
-            ) {
+                isActive: $showNextPage
+            ){
                 EmptyView()
-            }
-                .hidden()
+            }.hidden()
         )
     }
     
@@ -112,7 +111,7 @@ struct LogIn: View{
                 errorMessage = error.localizedDescription
             } else {
                 print("Logged in successfully")
-                shouldShowLoggedInView = true
+                showNextPage = true
             }
         }
     }
@@ -120,7 +119,7 @@ struct LogIn: View{
 
 struct LogIn_Previews: PreviewProvider {
     static var previews: some View {
-        LogIn()
+        LogInPage()
     }
 }
 

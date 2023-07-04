@@ -4,10 +4,9 @@ import SwiftUI
 struct SheetDetilCar: View {
     var body: some View {
         
-        VStack(spacing: 20){
+        VStack(alignment: .leading, spacing: 20){
                         
         Text("Car Details")
-//                .multilineTextAlignment(.center)
                 .foregroundColor(Color("BG"))
                 .font(.title)
                 .bold()
@@ -45,7 +44,6 @@ struct SheetDetilCar: View {
                     .padding(.horizontal, 30)
                     .padding(.vertical,8)
                     .foregroundColor(.white)
-
                     .background {
                         RoundedRectangle(cornerRadius: 10, style: .continuous)
                             .fill(Color("BG").opacity(0.6))
@@ -65,14 +63,11 @@ struct SheetDetilCar: View {
                     .padding(.horizontal, 20)
                     .padding(.vertical,8)
                     .foregroundColor(.white)
-
                     .background {
                         RoundedRectangle(cornerRadius: 10, style: .continuous)
                             .fill(Color("BG").opacity(0.6))
                     }
             }
-
-
         }.padding()
     }
 }

@@ -24,7 +24,7 @@ struct BaseView: View{
         let sideBarWidth = getRect() .width - 90
         
         // Whole Navigation View..
-        NavigationView{
+        NavigationStack{
             
             ZStack{
                 
@@ -38,16 +38,10 @@ struct BaseView: View{
                     
                     // Main Tab View...
                     VStack(spacing: 0){
-                        
+                                                
                         TabView(selection: $currentTab){
-                            
-                            //                        Home(showMenu: $showMenu)
-                            //                            .navigationBarTitleDisplayMode(
-                            //                                .inline)
-                            //                            .navigationBarHidden(true)
-                            //                            .tag("Home")
-                            //
-                            Text("Rental")
+
+                            HomeView()
                                 .navigationBarTitleDisplayMode(
                                     .inline)
                                 .navigationBarHidden(true)
@@ -58,13 +52,7 @@ struct BaseView: View{
                                     .inline)
                                 .navigationBarHidden(true)
                                 .tag("Map")
-                            
-                            Text("Chat")
-                                .navigationBarTitleDisplayMode(
-                                    .inline)
-                                .navigationBarHidden(true)
-                                .tag("Chat")
-                            
+                           
                             Text("Profile")
                                 .navigationBarTitleDisplayMode(
                                     .inline)
@@ -80,15 +68,12 @@ struct BaseView: View{
                             HStack(spacing: 0){
                                 
                                 // Tab Buttons..
-                                //                            TabButton (image: "Home")
                                 
-                                TabButton (image: "Rental")
+                                TabButton(image: "Rental")
                                 
-                                TabButton (image: "Chat")
+                                TabButton(image: "Map")
                                 
-                                TabButton (image: "Map")
-                                
-                                TabButton (image: "Profile")
+                                TabButton(image: "Profile")
                                 
                             }
                             .padding([.top], 15)
@@ -97,7 +82,6 @@ struct BaseView: View{
                     .frame(width: getRect().width)
                     // BG when menu is showing..
                     .overlay(
-                        
                         Rectangle()
                             .fill(
                                 
@@ -118,12 +102,11 @@ struct BaseView: View{
                 .offset(x: offset > 0 ? offset : 0)
                 // Gesture..
                 .gesture(
-                    
-                DragGesture()
-                    .updating($gestureOffset, body: { value, out, _ in
-                out = value.translation.width
-                })
-                    .onEnded(onEnd(value:))
+                    DragGesture()
+                        .updating($gestureOffset, body: { value, out, _ in
+                            out = value.translation.width
+                        })
+                        .onEnded(onEnd(value:))
                 )
                 // No Nav bar title..
                 // Hiding nav bar...
@@ -131,6 +114,7 @@ struct BaseView: View{
                 .navigationBarHidden (true)
             }
         }
+        .navigationBarBackButtonHidden(true)
         .animation(.easeOut, value: offset == 0)
         .onChange(of: showMenu) { newValue in
             if showMenu && offset == 0 {
@@ -144,7 +128,7 @@ struct BaseView: View{
             }
         }
         .onChange(of: gestureOffset) { newValue in
-        onChange()
+            onChange()
         }
     }
     
@@ -169,15 +153,12 @@ struct BaseView: View{
                     showMenu = true
                 }
                 else{
-                    
                     // Extra cases..
                     if offset == sideBarWidth{
-                    return
+                        return
                     }
-                    
                     offset = 0
                     showMenu = false
-                    
                 }
             }
             else{
@@ -188,24 +169,23 @@ struct BaseView: View{
                 else{
                     
                     if offset == 0 || !showMenu{
-                    return
+                        return
                     }
-                
+                    
                     offset = sideBarWidth
                     showMenu = true
                 }
             }
         }
-        
         // storing last offset..
         lastStoredOffset = offset
-        
     }
     
     @ViewBuilder
     func TabButton(image: String)->some View{
         Button{
-            withAnimation{ currentTab = image }
+            withAnimation{ currentTab = image
+            }
         }label:{
             Image(image)
                 .resizable()

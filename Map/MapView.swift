@@ -4,59 +4,9 @@ import MapKit
 import CoreLocation
 import Firebase
 import FirebaseDatabase
-//struct CarDetailsView: View {
-//
-//         @State private var centerCoordinate = CLLocationCoordinate2D(latitude: 24.774265, longitude: 46.738586)
-//         @State private var annotations = [MKPointAnnotation]()
-//         @State private var showingCarDetailsView = false
-//         @State private var savedLocations = [CLLocationCoordinate2D]()
-//    @State var showMenu: Bool = false
-//    var body: some View {
-//           HomeSideMenu(showMenu: $showMenu)
-//        VStack {
-//            Text("Car Details")
-//                .font(.largeTitle)
-//                .fontWeight(.bold)
-//                .padding()
-//            VStack {
-//                Spacer()
-//
-//                Button(action: {
-//                    // Save location to Firebase
-//                    let latitude = centerCoordinate.latitude
-//                    let longitude = centerCoordinate.longitude
-//                    let ref = Database.database().reference()
-//                    let locationRef = ref.child("locations").childByAutoId()
-//                    locationRef.setValue(["latitude": latitude, "longitude": longitude])
-//
-//                    // Add saved location to annotations
-//                    let annotation = MKPointAnnotation()
-//                    annotation.coordinate = centerCoordinate
-//                    annotations.append(annotation)
-//                    savedLocations.append(centerCoordinate)
-//
-//                    showingCarDetailsView = true
-//                }) {
-//                    Text("Add")
-//                        .foregroundColor(.white)
-//                }
-//                .frame(maxWidth: .infinity)
-//                .padding()
-//                .background(Color.blue)
-//                .cornerRadius(10)
-//                .padding()
-//
-//            }
-//
-//            NavigationLink(destination: MapViewContainer(), isActive: $showingCarDetailsView) {
-//                EmptyView()
-//            }
-//
-//        }
-//    }
-//}
 
 struct MapViewContainer: View {
+    
     @State private var showLoginAlert = false
     @State private var isLoggingIn = true
     @State private var showLogInPage = false
@@ -67,36 +17,13 @@ struct MapViewContainer: View {
     @State private var savedLocations = [CLLocationCoordinate2D]()
 
     var body: some View {
+        
         ZStack {
             MapView(centerCoordinate: $centerCoordinate, annotations: $annotations)
                 .onTapGesture {
                     showingCarDetailsView = true
                     ignoresSafeArea()
                 }
-            VStack {
-                Button("Login") {
-                    showLoginAlert.toggle()
-                    isLoggingIn = true
-                }
-            }
-            .alert(isPresented: $showLoginAlert) {
-                Alert(
-                    title: Text("Sign Up"),
-                    message: Text("Would you like to sign un with your existing account or create a new one?"),
-                    primaryButton: .default(Text("Sign Up"), action: {
-                        if isLoggingIn {
-                            showLogInPage.toggle()
-                            isLoggingIn = false
-                            
-                        } else {
-                            // Navigate to create account screen
-                        }
-                    }),
-                    secondaryButton: .default(Text("Cancel"))
-                )
-            }.navigationBarBackButtonHidden(true)
-                .fullScreenCover(isPresented: $showLogInPage) {
-                    Login() }
         }
         .onAppear {
             annotations.append(MKPointAnnotation())
@@ -131,7 +58,12 @@ struct MapViewContainer: View {
             }
         }
         .sheet(isPresented: $showingCarDetailsView) {
-     
+            
+            VStack(alignment: .leading, spacing: 10){
+                SheetDetilCar()
+            }
+    
+            .presentationDetents([.height(230), .medium])
         }
     }
 }
@@ -205,8 +137,8 @@ struct ContentView1: View {
     }
 }
 
-struct ContentView1_Previews: PreviewProvider {
+struct MapViewContainer_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView1()
+        MapViewContainer()
     }
 }

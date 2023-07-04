@@ -52,13 +52,11 @@ struct FormPage: View {
                 
                 VStack(alignment: .leading, spacing: 20) {
                     Text("Add your car")
-                    //                        .multilineTextAlignment(.center)
                         .foregroundColor(Color("BG"))
                         .font(.title)
                         .bold()
                     
                     VStack(alignment: .leading, spacing: 15){
-                        
                         
                         HStack{
                             
@@ -164,7 +162,7 @@ struct FormPage: View {
                         
                     }) {
                         Text("Save")
-                            .font(.title2)
+                            .font(.headline)
                             .padding(16)
                             .frame(maxWidth: .infinity)
                             .background(Color("BG"))
